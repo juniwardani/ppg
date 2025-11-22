@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <!-- Enhanced responsive meta tags -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#064e03">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+  
+  <!-- SEO and social meta tags -->
+  <meta name="description" content="Aplikasi buku digital LPQ Al Muslimun - Membentuk Generasi Qurani">
+  <meta name="keywords" content="rumah tahfidz, saijaan, quran, digital book, tahfidz">
+  <meta name="author" content="LPQ Al Muslimun">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="LPQ Al Muslimun - Digital Book Reader">
+  <meta property="og:description" content="Aplikasi buku digital LPQ Al Muslimun - Membentuk Generasi Qurani">
+  <meta property="og:type" content="website">
+  
+  <!-- PWA capable -->
+  <meta name="application-name" content="RT Saijaan">
+  <meta name="msapplication-TileColor" content="#064e03">
+  
+  <!-- Disable automatic phone number detection -->
+  <meta name="format-detection" content="telephone=no">
+  
+  <title>BUKU ARAB-MELAYU</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="header">
+      <h1>BUKU ARAB-MELAYU</h1>
+      <div class="subtitle">Muhammad Semman, S.Pd</div>
+    </header>
+
+    <div class="toolbar">
+      <button id="prevBtn" class="nav-btn">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <path fill="currentColor" d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+        </svg>
+      </button>
+      <span id="pageNumber">Page 1</span>
+      <button id="nextBtn" class="nav-btn">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <path fill="currentColor" d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/>
+        </svg>
+      </button>
+      <button id="tocBtn" class="nav-btn">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <path fill="currentColor" d="M3 9h18v2H3V9zm0 4h18v2H3v-2zm0-8h18v2H3V5zm0 12h18v2H3v-2z"/>
+        </svg>
+      </button>
+      <button id="fullscreenBtn" class="nav-btn">Fullscreen</button>
+    </div>
+    
+    <div class="book-container">
+      <div id="book" class="book" style="margin: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+        <!-- Pages will be loaded dynamically -->
+      </div>
+    </div>
+
+    <div id="tocOverlay" class="toc-overlay">
+      <div class="toc-container">
+        <h2>Table of Contents</h2>
+        <div id="tocList" class="toc-list">
+          <!-- TOC items will be added dynamically -->
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      Buku Digital Arab-Melayu<br>
+      Oleh : Muhammad Semman, S.Pd
+    </footer>
+  </div>
+
+  <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
