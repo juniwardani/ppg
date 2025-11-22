@@ -1,7 +1,7 @@
 class DigitalBook {
   constructor() {
     this.currentPage = 0;
-    this.totalPages = 241;
+    this.totalPages = 28;
     this.book = document.getElementById('book');
     this.pageNumber = document.getElementById('pageNumber');
     this.prevBtn = document.getElementById('prevBtn');
